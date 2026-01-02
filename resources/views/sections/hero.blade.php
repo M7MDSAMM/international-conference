@@ -15,32 +15,36 @@
 
     <div class="container mx-auto px-6 py-20 relative z-10">
         <div class="max-w-5xl mx-auto text-center">
-            <!-- Logo -->
-            <div class="mb-12 fade-in">
-                <div class="w-48 h-48 mx-auto bg-white rounded-full shadow-2xl flex items-center justify-center p-4">
+            <!-- Logo - Increased Size -->
+            <div class="mb-10 fade-in">
+                <div class="w-60 h-60 mx-auto bg-white rounded-full shadow-2xl flex items-center justify-center p-4">
                     <img src="{{ asset('logo.png') }}" alt="{{ __('site.hero.alliance_name') }}" class="w-full h-full object-contain">
                 </div>
             </div>
 
+            <!-- Main Conference Slogan - Below Logo with Background Badge -->
+            <div class="mb-8 fade-in delay-100 flex justify-center">
+                <div class="inline-block px-6 py-3 rounded-full bg-white/90 backdrop-blur-sm shadow-2xl">
+                    <p class="text-lg md:text-2xl font-bold text-[#1a1a1a] en-text" style="text-shadow: 0 1px 2px rgba(255,255,255,0.5);">
+                        {{ __('site.hero.subtitle') }}
+                    </p>
+                </div>
+            </div>
+
             <!-- Title -->
-            <h1 class="text-5xl md:text-7xl font-bold text-white mb-6 fade-in delay-100" style="text-shadow: 0 4px 20px rgba(0,0,0,0.5), 0 2px 10px rgba(0,0,0,0.4);">
+            <h1 class="text-5xl md:text-7xl font-bold text-white mb-6 fade-in delay-200" style="text-shadow: 0 4px 20px rgba(0,0,0,0.5), 0 2px 10px rgba(0,0,0,0.4);">
                 {{ __('site.hero.alliance_name') }}
             </h1>
 
             <!-- Conference Title Arabic -->
-            <h2 class="text-3xl md:text-5xl font-semibold text-white mb-4 fade-in delay-200" style="text-shadow: 0 4px 20px rgba(0,0,0,0.5), 0 2px 10px rgba(0,0,0,0.4);">
+            <h2 class="text-3xl md:text-5xl font-semibold text-white mb-4 fade-in delay-300" style="text-shadow: 0 4px 20px rgba(0,0,0,0.5), 0 2px 10px rgba(0,0,0,0.4);">
                 {{ __('site.hero.conference_title_ar') }}
             </h2>
 
             <!-- English Title -->
-            <h3 class="text-2xl md:text-4xl font-bold text-white en-text mb-4 fade-in delay-300" style="text-shadow: 0 4px 20px rgba(0,0,0,0.5), 0 2px 10px rgba(0,0,0,0.4);">
+            <h3 class="text-2xl md:text-4xl font-bold text-white en-text mb-12 fade-in delay-400" style="text-shadow: 0 4px 20px rgba(0,0,0,0.5), 0 2px 10px rgba(0,0,0,0.4);">
                 {{ __('site.hero.conference_title_en') }}
             </h3>
-
-            <!-- Subtitle -->
-            <p class="text-xl md:text-3xl font-medium text-white en-text mb-12 fade-in delay-400" style="text-shadow: 0 3px 15px rgba(0,0,0,0.5), 0 2px 8px rgba(0,0,0,0.4);">
-                {{ __('site.hero.subtitle') }}
-            </p>
 
             <!-- CTA Button -->
             <div class="fade-in delay-500">
